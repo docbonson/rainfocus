@@ -1,0 +1,75 @@
+.registration-workflows-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  width: 100%;
+}
+
+.org-settings-container {
+  display: flex;
+  align-items: center;
+}
+
+.org-logo {
+  margin-right: 20px;
+  width: 60px;
+}
+
+.steps {
+  font-weight: bold;
+}
+
+.attendee-card,
+.attendee-portal,
+.workflow-registration-card {
+  max-width: 400px;
+  width: 100%;
+}
+
+.workflow-registration-card {
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 1360px) {
+  .registration-workflows-container {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 930px) {
+  .registration-workflows-container {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 40px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .registration-workflows-container {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 40px;
+    width: 90%;
+  }
+
+  .attendee-portal {
+    max-width: 90%;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .registration-workflows-container {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 10px;
+  }
+
+  .attendee-portal {
+    max-width: 400px;
+  }
+}
+
+@media screen and (max-width: 504px) {
+  .attendee-portal {
+    max-width: 90%;
+  }
+}

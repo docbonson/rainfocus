@@ -1,0 +1,21 @@
+.card-container {
+  border: 2px solid lightgray;
+  border-radius: 8px;
+  padding: 18px;
+  margin: 10px 0px;
+  height: 122px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  color: #5c00dc;
+  margin-right: 10px;
+}
